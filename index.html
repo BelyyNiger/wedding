@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на свадьбу | Владимир и Полина</title>
+    <title>Приглашение на свадьбу | Полина и Владимир</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="dangers.js"></script>
     <style>
@@ -530,29 +530,6 @@
             transform: translateY(-3px);
         }
 
-	.telegram-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-	}
-
-	.telegram-button {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #0088cc;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: all 0.3s;
-            font-weight: bold;
-	}
-
-	.telegram-button:hover {
-            background-color: #006699;
-            transform: translateY(-3px);
-	}
-
         /* Footer */
         footer {
             background-color: #333;
@@ -608,25 +585,14 @@
                 gap: 5px;
             }
         }
-
-        .rsvp-button {
-            background: #8B4513;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
     <!-- Header with invitation -->
     <header>
-        <h1 class="names">Владимир <span class="heart">&</span> Полина</h1>
+        <h1 class="names">Полина <span class="heart">&</span> Владимир</h1>
         <p class="date">12 декабря 2025</p>
-        <p class="invitation-text">Приглашаем Вас разделить с нами радость нашего бракосочетания</p>
+        <p class="invitation-text">Приглашаем вас разделить с нами радость нашего бракосочетания</p>
         <div class="scroll-down">
             <i class="fas fa-chevron-down"></i>
         </div>
@@ -638,14 +604,14 @@
             <h2 class="section-title">Жених и Невеста</h2>
             <div class="couple-container">
                 <div class="person">
-                    <img src="assets/images/husband.jpg" alt="Жених" class="person-img">
-                    <h3 class="person-name">Владимир</h3>
-                    <p class="person-role">Жених</p>
-                </div>
-                <div class="person">
                     <img src="assets/images/wife.jpg" alt="Невеста" class="person-img">
                     <h3 class="person-name">Полина</h3>
                     <p class="person-role">Невеста</p>
+                </div>
+                <div class="person">
+                    <img src="assets/images/husband.jpg" alt="Жених" class="person-img">
+                    <h3 class="person-name">Владимир</h3>
+                    <p class="person-role">Жених</p>
                 </div>
             </div>
         </div>
@@ -659,16 +625,10 @@
                 <div class="details-text">
                     <h3 class="details-title">Свадебная церемония</h3>
                     <p class="details-info"><i class="fas fa-calendar-alt"></i> <strong>Дата:</strong> 12 декабря 2025 года</p>
-                    <p class="details-info"><i class="fas fa-clock"></i> <strong>Время:</strong> 15:00</p>
+                    <p class="details-info"><i class="fas fa-clock"></i> <strong>Время:</strong> 16:00</p>
                     <p class="details-info"><i class="fas fa-map-marker-alt"></i> <strong>Место:</strong> Bahnhof</p>
-                    <p class="details-info"><i class="fas fa-home"></i> <strong>Адрес:</strong> Покровская ул., 7, Волжский</p>
-		    <p class="details-info"><i class="fas fa-microphone"></i> <strong>Ведущий:</strong> Евгений Олейников</p>
-		    <div style="margin: 15px 0;">
-		        <a href="https://t.me/BelyyNiger" target="_blank" class="rsvp-button" style="display: inline-block; text-decoration: none;">
-		            <i class="fas fa-gift"></i> Сообщить ведущему о творческом поздравлении
-		        </a>
-		    </div>
-                    <p style="margin-top: 20px; font-style: italic;">Мы будем счастливы видеть Вас на нашем торжестве и разделить с Вами этот особенный день!</p>
+                    <p class="details-info"><i class="fas fa-home"></i> <strong>Адрес:</strong> Покровская ул., 7, микрорайон Южный, Волжский</p>
+                    <p style="margin-top: 20px; font-style: italic;">Мы будем счастливы видеть вас на нашем торжестве и разделить с вами этот особенный день!</p>
                 </div>
                 <div class="details-map" id="yandexMap">
                     <div class="map-overlay">
@@ -817,8 +777,8 @@
             </form>
             
             <div style="margin-top: 20px;">
-                <button id="contactBtn" class="rsvp-button">Связаться с молодожёнами</button>
-                <p style="margin-top: 15px; font-size: 0.9rem;">Также можете позвонить или написать</p>
+                <button id="contactBtn" class="rsvp-button">Позвонить для подтверждения</button>
+                <p style="margin-top: 15px; font-size: 0.9rem;">Или отправьте сообщение в WhatsApp</p>
             </div>
         </div>
     </section>
@@ -833,12 +793,8 @@
                 <div class="phone-number">Невеста - +7 (903) 478-74-75</div>
             </div>
             <div class="whatsapp-buttons">
-                <a href="https://wa.me/79771050135" class="whatsapp-button" target="_blank">WhatsApp жениха</a>
-                <a href="https://wa.me/79034787475" class="whatsapp-button" target="_blank">WhatsApp невесты</a>
-            </div>
-            <div class="telegram-buttons" style="margin-top: 15px;">
-                <a href="https://t.me/79771050135" class="telegram-button" target="_blank">Telegram жениха</a>
-                <a href="https://t.me/79034787475" class="telegram-button" target="_blank">Telegram невесты</a>
+                <a href="https://wa.me/79771050135" class="whatsapp-button" target="_blank">Написать жениху</a>
+                <a href="https://wa.me/79034787475" class="whatsapp-button" target="_blank">Написать невесте</a>
             </div>
         </div>
     </div>
@@ -853,9 +809,7 @@
 
     <script>
         // === КОНФИГУРАЦИЯ ТЕЛЕГРАМ БОТА ===
-        const TELEGRAM_BOT_TOKEN = '8402820015:AAG6Fyt7zmM7ybRpqgyrAEVsnYPYkrpIPRg';
-		const TELEGRAM_CHAT_ID = '1017940238';
-		
+        
         // Функция для отправки данных в Telegram
         async function sendToTelegram(data) {
             try {
@@ -941,11 +895,8 @@
         }
 
         // Update countdown every second
-        let countdownTimer;
-        document.addEventListener('DOMContentLoaded', function() {
-            updateCountdown();
-            countdownTimer = setInterval(updateCountdown, 1000);
-        });
+        const countdownTimer = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
 
         // Smooth scrolling
         document.querySelector('.scroll-down').addEventListener('click', function() {
@@ -999,107 +950,6 @@
         let guestCount = 1;
         let childCount = 0;
 
-        // Функция для обновления видимости вопросов 4 и 5 для конкретного гостя
-        function updateGuestQuestionsVisibility(guestNumber) {
-            const attendanceRadio = document.querySelector(`input[name="attendance${guestNumber}"]:checked`);
-            const drinksRow = document.querySelector(`#drinksContainer .guest-row:nth-child(${guestNumber})`);
-            const meatRow = document.querySelector(`#meatContainer .guest-row:nth-child(${guestNumber})`);
-            
-            if (attendanceRadio && attendanceRadio.value === 'Нет') {
-                // Если выбран "Нет", заменяем радиокнопки на прочерк
-                if (drinksRow) {
-                    drinksRow.querySelector('.radio-group').innerHTML = '<span style="color: #999; font-style: italic;">—</span>';
-                    // Создаем скрытое поле для сохранения значения
-                    if (!drinksRow.querySelector('input[type="hidden"]')) {
-                        const hiddenInput = document.createElement('input');
-                        hiddenInput.type = 'hidden';
-                        hiddenInput.name = `drink${guestNumber}`;
-                        hiddenInput.value = 'Не присутствует';
-                        drinksRow.appendChild(hiddenInput);
-                    }
-                }
-                if (meatRow) {
-                    meatRow.querySelector('.radio-group').innerHTML = '<span style="color: #999; font-style: italic;">—</span>';
-                    // Создаем скрытое поле для сохранения значения
-                    if (!meatRow.querySelector('input[type="hidden"]')) {
-                        const hiddenInput = document.createElement('input');
-                        hiddenInput.type = 'hidden';
-                        hiddenInput.name = `meat${guestNumber}`;
-                        hiddenInput.value = 'Не присутствует';
-                        meatRow.appendChild(hiddenInput);
-                    }
-                }
-            } else {
-                // Если выбран "Да" или ничего не выбрано, показываем обычные радиокнопки
-                if (drinksRow && !drinksRow.querySelector('input[type="radio"]')) {
-                    drinksRow.querySelector('.radio-group').innerHTML = `
-                        <label class="radio-option">
-                            <input type="radio" name="drink${guestNumber}" value="Безалкогольные"> Безалкогольные
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="drink${guestNumber}" value="Шампанское"> Шампанское
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="drink${guestNumber}" value="Вино белое"> Вино белое
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="drink${guestNumber}" value="Вино красное"> Вино красное
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="drink${guestNumber}" value="Водка"> Водка
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="drink${guestNumber}" value="Коньяк"> Коньяк
-                        </label>
-                    `;
-                    // Удаляем скрытое поле если оно есть
-                    const hiddenInput = drinksRow.querySelector('input[type="hidden"]');
-                    if (hiddenInput) {
-                        hiddenInput.remove();
-                    }
-                }
-                
-                if (meatRow && !meatRow.querySelector('input[type="radio"]')) {
-                    meatRow.querySelector('.radio-group').innerHTML = `
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Курица"> Курица
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Свинина"> Свинина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Говядина"> Говядина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Рыба"> Рыба
-                        </label>
-                    `;
-                    // Удаляем скрытое поле если оно есть
-                    const hiddenInput = meatRow.querySelector('input[type="hidden"]');
-                    if (hiddenInput) {
-                        hiddenInput.remove();
-                    }
-                }
-            }
-        }
-
-        // Функция для обновления видимости всех вопросов
-        function updateAllQuestionsVisibility() {
-            for (let i = 1; i <= guestCount; i++) {
-                updateGuestQuestionsVisibility(i);
-            }
-        }
-
-        // Добавляем обработчики событий для радиокнопок присутствия
-        function addAttendanceEventListeners() {
-            for (let i = 1; i <= guestCount; i++) {
-                const attendanceRadios = document.querySelectorAll(`input[name="attendance${i}"]`);
-                attendanceRadios.forEach(radio => {
-                    radio.addEventListener('change', updateAllQuestionsVisibility);
-                });
-            }
-        }
-
         // Add guest functionality
         document.getElementById('addGuestBtn').addEventListener('click', function() {
             if (guestCount < 5) {
@@ -1141,22 +991,22 @@
                     <span class="guest-label">Гость ${guestCount}</span>
                     <div class="radio-group">
                         <label class="radio-option">
-                            <input type="radio" name="drink${guestCount}" value="Безалкогольные"> Безалкогольные
+                            <input type="radio" name="drink${guestCount}" value="Безалкогольные" required> Безалкогольные
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink${guestCount}" value="Шампанское"> Шампанское
+                            <input type="radio" name="drink${guestCount}" value="Шампанское" required> Шампанское
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink${guestCount}" value="Вино белое"> Вино белое
+                            <input type="radio" name="drink${guestCount}" value="Вино белое" required> Вино белое
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink${guestCount}" value="Вино красное"> Вино красное
+                            <input type="radio" name="drink${guestCount}" value="Вино красное" required> Вино красное
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink${guestCount}" value="Водка"> Водка
+                            <input type="radio" name="drink${guestCount}" value="Водка" required> Водка
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink${guestCount}" value="Коньяк"> Коньяк
+                            <input type="radio" name="drink${guestCount}" value="Коньяк" required> Коньяк
                         </label>
                     </div>
                 `;
@@ -1170,16 +1020,16 @@
                     <span class="guest-label">Гость ${guestCount}</span>
                     <div class="radio-group">
                         <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Курица"> Курица
+                            <input type="radio" name="meat${guestCount}" value="Курица" required> Курица
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Свинина"> Свинина
+                            <input type="radio" name="meat${guestCount}" value="Свинина" required> Свинина
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Говядина"> Говядина
+                            <input type="radio" name="meat${guestCount}" value="Говядина" required> Говядина
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Рыба"> Рыба
+                            <input type="radio" name="meat${guestCount}" value="Рыба" required> Рыба
                         </label>
                     </div>
                 `;
@@ -1194,9 +1044,6 @@
                 newGuestRow.querySelector('.remove-guest').addEventListener('click', function() {
                     removeGuest(guestCount);
                 });
-                
-                // Добавляем обработчики событий для новых радиокнопок
-                addAttendanceEventListeners();
             }
         });
         
@@ -1223,9 +1070,6 @@
                 
                 // Update button state
                 document.getElementById('addGuestBtn').disabled = false;
-                
-                // Обновляем обработчики событий
-                addAttendanceEventListeners();
             }
         }
         
@@ -1340,22 +1184,22 @@
                     <span class="guest-label">Гость 1</span>
                     <div class="radio-group">
                         <label class="radio-option">
-                            <input type="radio" name="drink1" value="Безалкогольные"> Безалкогольные
+                            <input type="radio" name="drink1" value="Безалкогольные" required> Безалкогольные
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink1" value="Шампанское"> Шампанское
+                            <input type="radio" name="drink1" value="Шампанское" required> Шампанское
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink1" value="Вино белое"> Вино белое
+                            <input type="radio" name="drink1" value="Вино белое" required> Вино белое
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink1" value="Вино красное"> Вино красное
+                            <input type="radio" name="drink1" value="Вино красное" required> Вино красное
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink1" value="Водка"> Водка
+                            <input type="radio" name="drink1" value="Водка" required> Водка
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="drink1" value="Коньяк"> Коньяк
+                            <input type="radio" name="drink1" value="Коньяк" required> Коньяк
                         </label>
                     </div>
                 </div>
@@ -1366,16 +1210,16 @@
                     <span class="guest-label">Гость 1</span>
                     <div class="radio-group">
                         <label class="radio-option">
-                            <input type="radio" name="meat1" value="Курица"> Курица
+                            <input type="radio" name="meat1" value="Курица" required> Курица
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="meat1" value="Свинина"> Свинина
+                            <input type="radio" name="meat1" value="Свинина" required> Свинина
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="meat1" value="Говядина"> Говядина
+                            <input type="radio" name="meat1" value="Говядина" required> Говядина
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="meat1" value="Рыба"> Рыба
+                            <input type="radio" name="meat1" value="Рыба" required> Рыба
                         </label>
                     </div>
                 </div>
@@ -1386,16 +1230,7 @@
             // Reset buttons
             document.getElementById('addGuestBtn').disabled = false;
             document.getElementById('addChildBtn').disabled = false;
-            
-            // Добавляем обработчики событий после сброса формы
-            addAttendanceEventListeners();
         }
-        
-        // Инициализация обработчиков событий при загрузке страницы
-        document.addEventListener('DOMContentLoaded', function() {
-            addAttendanceEventListeners();
-        });
     </script>
 </body>
 </html>
-
