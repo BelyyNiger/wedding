@@ -3,6 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph мета-теги -->
+    <meta property="og:title" content="Приглашение на свадьбу | Владимир и Полина">
+    <meta property="og:description" content="Дорогие друзья и родные! Приглашаем вас разделить с нами радость нашего свадебного торжества">
+    <meta property="og:image" content="https://belyyniger.github.io/wedding_proba/assets/images/fonik.jpg">
+    <meta property="og:url" content="https://belyyniger.github.io/wedding_proba/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Свадьба Владимира и Полины">
+    
+    <!-- Дополнительные мета-теги -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Приглашение на свадьбу | Владимир и Полина">
+    <meta name="twitter:description" content="Дорогие друзья и родные! Приглашаем вас разделить с нами радость нашего свадебного торжества">
+    <meta name="twitter:image" content="https://belyyniger.github.io/wedding_proba/assets/images/fonik.jpg">
+
     <title>Приглашение на свадьбу | Владимир и Полина</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="dangers.js"></script>
@@ -846,7 +866,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>С любовью, Полина и Владимир <span class="footer-heart">❤</span></p>
+            <p>С любовью, Владимир и Полина <span class="footer-heart">❤</span></p>
             <p>© 2025</p>
         </div>
     </footer>
@@ -1062,12 +1082,6 @@
                         <label class="radio-option">
                             <input type="radio" name="meat${guestNumber}" value="Свинина"> Свинина
                         </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Говядина"> Говядина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Рыба"> Рыба
-                        </label>
                     `;
                     // Удаляем скрытое поле если оно есть
                     const hiddenInput = meatRow.querySelector('input[type="hidden"]');
@@ -1169,12 +1183,6 @@
                         </label>
                         <label class="radio-option">
                             <input type="radio" name="meat${guestCount}" value="Свинина"> Свинина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Говядина"> Говядина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Рыба"> Рыба
                         </label>
                     </div>
                 `;
@@ -1366,12 +1374,6 @@
                         <label class="radio-option">
                             <input type="radio" name="meat1" value="Свинина"> Свинина
                         </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat1" value="Говядина"> Говядина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat1" value="Рыба"> Рыба
-                        </label>
                     </div>
                 </div>
             `;
@@ -1393,4 +1395,5 @@
     </script>
 </body>
 </html>
+
 
