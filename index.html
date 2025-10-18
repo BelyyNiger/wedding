@@ -121,10 +121,12 @@
         }
 		
         .section-bg-color {
-            display: block;
-            width: 80px;
-            height: 3px;
-            background: #8B4513;
+			background-color: #8B4513;
+		    color: white; /* Белый текст для контраста */
+		    padding: 4px 8px; /* Отступы вокруг текста */
+		    border-radius: 3px; /* Слегка скругленные углы */
+		    display: inline-block; /* Чтобы фон точно облегал текст */
+		    line-height: 1.2; /* Межстрочный интервал */
         }
 
         .section-title:after {
@@ -735,7 +737,11 @@
     <section class="rsvp-section">
         <div class="container">
             <h2 class="section-title">Подтвердите присутствие</h2>
-            <p><h3>Пожалуйста, сообщите о своем присутствии до </h3><div class="section-bg-color">27 ноября 2025 года</div></p>
+            <p>
+				<h3>Пожалуйста, сообщите о своем присутствии до 
+					<span class="section-bg-color">27 ноября 2025 года</span>
+				</h3>
+			</p>
 			
             
             <form id="rsvpForm" class="rsvp-form">
@@ -1397,6 +1403,7 @@
     </script>
 </body>
 </html>
+
 
 
 
